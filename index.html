@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finland / Iceland 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #1a1a1a; color: #e8e0d4; }
+
+    header {
+      text-align: center;
+      padding: 64px 20px 48px;
+      border-bottom: 1px solid #2e2e2e;
+    }
+    header h1 { font-size: 2.6rem; font-weight: 300; letter-spacing: 0.18em; text-transform: uppercase; }
+    header p { margin-top: 10px; font-size: 0.9rem; color: #666; letter-spacing: 0.08em; }
+
+    .gallery {
+      columns: 3;
+      column-gap: 12px;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    figure {
+      break-inside: avoid;
+      margin-bottom: 12px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    figure img {
+      width: 100%;
+      display: block;
+      transition: opacity 0.2s;
+    }
+    figure:hover img { opacity: 0.82; }
+
+    figcaption {
+      padding: 8px 10px 10px;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #b0a090;
+      background: #111;
+      font-style: italic;
+    }
+
+    @media (max-width: 900px) { .gallery { columns: 2; } }
+    @media (max-width: 560px) { .gallery { columns: 1; } header h1 { font-size: 1.7rem; } }
+
+    /* Lightbox */
+    #lb { display:none; position:fixed; inset:0; background:rgba(0,0,0,.96); z-index:1000; align-items:center; justify-content:center; }
+    #lb.on { display:flex; flex-direction:column; }
+    #lb-img { max-width:92vw; max-height:80vh; object-fit:contain; }
+    #lb-cap { max-width:80vw; margin-top:14px; font-size:0.9rem; color:#b0a090; font-style:italic; text-align:center; line-height:1.55; }
+    #lb-counter { margin-top:8px; font-size:0.78rem; color:#555; font-family:sans-serif; }
+    .lb-x { position:fixed; top:14px; right:22px; color:#777; font-size:2rem; cursor:pointer; font-family:sans-serif; line-height:1; }
+    .lb-x:hover { color:#fff; }
+    .lb-arr { position:fixed; top:50%; transform:translateY(-50%); color:#777; font-size:3rem; cursor:pointer; padding:16px 18px; font-family:sans-serif; user-select:none; }
+    .lb-arr:hover { color:#fff; }
+    #lb-prev { left:0; }
+    #lb-next { right:0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Finland &amp; Iceland &nbsp;&#8729;&nbsp; 2026</h1>
+  <p>93 photos</p>
+</header>
+
+<div class="gallery">
+  <figure onclick="openLb('10100528006019102.jpg')">
+    <img src="10100528006019102.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100528006039062.jpg')">
+    <img src="10100528006039062.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100528006054032.jpg')">
+    <img src="10100528006054032.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100528006123892.jpg')">
+    <img src="10100528006123892.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006148842.jpg')">
+    <img src="10100528006148842.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006178782.jpg')">
+    <img src="10100528006178782.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100528006253632.jpg')">
+    <img src="10100528006253632.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006273592.jpg')">
+    <img src="10100528006273592.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100528006293552.jpg')">
+    <img src="10100528006293552.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006373392.jpg')">
+    <img src="10100528006373392.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100528006463212.jpg')">
+    <img src="10100528006463212.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006503132.jpg')">
+    <img src="10100528006503132.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006533072.jpg')">
+    <img src="10100528006533072.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006572992.jpg')">
+    <img src="10100528006572992.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006612912.jpg')">
+    <img src="10100528006612912.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006652832.jpg')">
+    <img src="10100528006652832.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006702732.jpg')">
+    <img src="10100528006702732.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006757622.jpg')">
+    <img src="10100528006757622.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006807522.jpg')">
+    <img src="10100528006807522.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006867402.jpg')">
+    <img src="10100528006867402.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006922292.jpg')">
+    <img src="10100528006922292.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528006937262.jpg')">
+    <img src="10100528006937262.jpg" alt="" loading="lazy">
+    <figcaption>The Paradox Museum.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528007141852.jpg')">
+    <img src="10100528007141852.jpg" alt="" loading="lazy">
+    <figcaption>Our hotel had a fire alarm go off our first morning.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577419012.jpg')">
+    <img src="10100528577419012.jpg" alt="" loading="lazy">
+    <figcaption>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577433982.jpg')">
+    <img src="10100528577433982.jpg" alt="" loading="lazy">
+    <figcaption>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577468912.jpg')">
+    <img src="10100528577468912.jpg" alt="" loading="lazy">
+    <figcaption>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577533782.jpg')">
+    <img src="10100528577533782.jpg" alt="" loading="lazy">
+    <figcaption>An art piece symbolizing the long daylight in the summer.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577563722.jpg')">
+    <img src="10100528577563722.jpg" alt="" loading="lazy">
+    <figcaption>An art piece symbolizing the long daylight in the summer.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577578692.jpg')">
+    <img src="10100528577578692.jpg" alt="" loading="lazy">
+    <figcaption>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577673502.jpg')">
+    <img src="10100528577673502.jpg" alt="" loading="lazy">
+    <figcaption>Transportation planning porn for Aaron.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577688472.jpg')">
+    <img src="10100528577688472.jpg" alt="" loading="lazy">
+    <figcaption>Transportation planning porn for Aaron.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577698452.jpg')">
+    <img src="10100528577698452.jpg" alt="" loading="lazy">
+    <figcaption>Transportation planning porn for Aaron.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577803242.jpg')">
+    <img src="10100528577803242.jpg" alt="" loading="lazy">
+    <figcaption>Transportation planning porn for Aaron.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577853142.jpg')">
+    <img src="10100528577853142.jpg" alt="" loading="lazy">
+    <figcaption>Transportation planning porn for Aaron.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100528577893062.jpg')">
+    <img src="10100528577893062.jpg" alt="" loading="lazy">
+    <figcaption>Transportation planning porn for Aaron.<br><br>Using the recycled disposable lens.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529409990532.jpg')">
+    <img src="10100529409990532.jpg" alt="" loading="lazy">
+    <figcaption>This little autonomous mower keeps this field perfectly groomed.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529410025462.jpg')">
+    <img src="10100529410025462.jpg" alt="" loading="lazy">
+    <figcaption>Podium finisher!</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529410060392.jpg')">
+    <img src="10100529410060392.jpg" alt="" loading="lazy">
+    <figcaption>After Bekka Prime&#39;s first BJJ class!</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529410105302.jpg')">
+    <img src="10100529410105302.jpg" alt="" loading="lazy">
+    <figcaption>A great way to greet old friends.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529410140232.jpg')">
+    <img src="10100529410140232.jpg" alt="" loading="lazy">
+    <figcaption>After 2 rolls. I am not in BJJ shape.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529410175162.jpg')">
+    <img src="10100529410175162.jpg" alt="" loading="lazy">
+    <figcaption>This is the large mat space.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529987807582.jpg')">
+    <img src="10100529987807582.jpg" alt="" loading="lazy">
+    <figcaption>I had to figure out how to use the C2 PM5 in Finnish. Connecting it to my phone was fun.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100529987847502.jpg')">
+    <img src="10100529987847502.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100529987882432.jpg')">
+    <img src="10100529987882432.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100529987917362.jpg')">
+    <img src="10100529987917362.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398379792.jpg')">
+    <img src="10100530398379792.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398399752.jpg')">
+    <img src="10100530398399752.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398414722.jpg')">
+    <img src="10100530398414722.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398499552.jpg')">
+    <img src="10100530398499552.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398514522.jpg')">
+    <img src="10100530398514522.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398544462.jpg')">
+    <img src="10100530398544462.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398579392.jpg')">
+    <img src="10100530398579392.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398649252.jpg')">
+    <img src="10100530398649252.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398674202.jpg')">
+    <img src="10100530398674202.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398729092.jpg')">
+    <img src="10100530398729092.jpg" alt="" loading="lazy">
+    <figcaption>Someone thought the restaurant I picked was dirty and full of teenage boys. She wasn&#39;t wrong, but the food was well priced and quite delicious.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530398754042.jpg')">
+    <img src="10100530398754042.jpg" alt="" loading="lazy">
+    <figcaption>The central stairwell in the Oodi library.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530398883782.jpg')">
+    <img src="10100530398883782.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398898752.jpg')">
+    <img src="10100530398898752.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530398903742.jpg')">
+    <img src="10100530398903742.jpg" alt="" loading="lazy">
+    <figcaption>In her happy place.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530398943662.jpg')">
+    <img src="10100530398943662.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530399028492.jpg')">
+    <img src="10100530399028492.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530399188172.jpg')">
+    <img src="10100530399188172.jpg" alt="" loading="lazy">
+    <figcaption>The outside of the Oodi library in Helsinki.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530402900732.jpg')">
+    <img src="10100530402900732.jpg" alt="" loading="lazy">
+    <figcaption>The view from our balcony.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530402945642.jpg')">
+    <img src="10100530402945642.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530402985562.jpg')">
+    <img src="10100530402985562.jpg" alt="" loading="lazy">
+    <figcaption>If this is now done around the world, how can it be only at Scandic?</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403025482.jpg')">
+    <img src="10100530403025482.jpg" alt="" loading="lazy">
+    <figcaption>I&#39;ve seen Slim Jims, but this was my first time seeing Jim.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403070392.jpg')">
+    <img src="10100530403070392.jpg" alt="" loading="lazy">
+    <figcaption>The view from our balcony at about 1 AM.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403110312.jpg')">
+    <img src="10100530403110312.jpg" alt="" loading="lazy">
+    <figcaption>For our last breakfast in Helsinki (and about an hour after breakfast), we developed a reincarnation system for glassware. Death and rebirth occurs in a...</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403145242.jpg')">
+    <img src="10100530403145242.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530403185162.jpg')">
+    <img src="10100530403185162.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530403235062.jpg')">
+    <img src="10100530403235062.jpg" alt="" loading="lazy">
+    <figcaption>Banana for scale breaks down when the bananas are huge!</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403284962.jpg')">
+    <img src="10100530403284962.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530403334862.jpg')">
+    <img src="10100530403334862.jpg" alt="" loading="lazy">
+    <figcaption>Aaron Jongenelen this was the trail in central park. The left side is for walking, the right is a divided biking section.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403394742.jpg')">
+    <img src="10100530403394742.jpg" alt="" loading="lazy">
+    <figcaption>Playing a Harry Potter card game for the second time on the trip. Bekka demolished me.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403434662.jpg')">
+    <img src="10100530403434662.jpg" alt="" loading="lazy">
+    <figcaption>The board game library in the Oodi library.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403469592.jpg')">
+    <img src="10100530403469592.jpg" alt="" loading="lazy">
+    <figcaption>This store had some things right, but was way off on a lot of things. Like the products labeled in Mandarin.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403504522.jpg')">
+    <img src="10100530403504522.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100530403539452.jpg')">
+    <img src="10100530403539452.jpg" alt="" loading="lazy">
+    <figcaption>The train to the airport said it was going 159 km/hr. Bekka asked what that was in MPH. I said I didn&#39;t know the Fibonacci sequence up that high, but...</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530403579372.jpg')">
+    <img src="10100530403579372.jpg" alt="" loading="lazy">
+    <figcaption>PSA: Don&#39;t be the asshole loudly talking on your phone in a public space that is quiet other than your obnoxious voice. You just might end up on the...</figcaption>
+  </figure>
+  <figure onclick="openLb('10100530662226042.jpg')">
+    <img src="10100530662226042.jpg" alt="" loading="lazy">
+    <figcaption>It is always wonderful to be in Iceland. It is crazy to think it has been 9 years since my first visit.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100531113556572.jpg')">
+    <img src="10100531113556572.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531113566552.jpg')">
+    <img src="10100531113566552.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767436192.jpg')">
+    <img src="10100531767436192.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767471122.jpg')">
+    <img src="10100531767471122.jpg" alt="" loading="lazy">
+    <figcaption>Seems delivery drivers in Iceland get to drive company cars.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100531767506052.jpg')">
+    <img src="10100531767506052.jpg" alt="" loading="lazy">
+    <figcaption>I&#39;m not sure which log this is, but it is one of the logs Mangus ver Magnusson has in his gym.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100531767540982.jpg')">
+    <img src="10100531767540982.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767580902.jpg')">
+    <img src="10100531767580902.jpg" alt="" loading="lazy">
+    <figcaption>American flavor is ranch.</figcaption>
+  </figure>
+  <figure onclick="openLb('10100531767615832.jpg')">
+    <img src="10100531767615832.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767650762.jpg')">
+    <img src="10100531767650762.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767695672.jpg')">
+    <img src="10100531767695672.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767735592.jpg')">
+    <img src="10100531767735592.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767775512.jpg')">
+    <img src="10100531767775512.jpg" alt="" loading="lazy">
+  </figure>
+  <figure onclick="openLb('10100531767810442.jpg')">
+    <img src="10100531767810442.jpg" alt="" loading="lazy">
+  </figure>
+</div>
+
+<div id="lb">
+  <span class="lb-x" onclick="closeLb()">&times;</span>
+  <span class="lb-arr" id="lb-prev" onclick="lbNav(-1)">&#8249;</span>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-cap"></div>
+  <div id="lb-counter"></div>
+  <span class="lb-arr" id="lb-next" onclick="lbNav(1)">&#8250;</span>
+</div>
+
+<script>
+  const figs = [...document.querySelectorAll('figure')];
+  let idx = 0;
+  function openLb(src) {
+    idx = figs.findIndex(f => f.querySelector('img').src.endsWith(src));
+    showLb();
+    document.getElementById('lb').classList.add('on');
+  }
+  function closeLb() { document.getElementById('lb').classList.remove('on'); }
+  function lbNav(d) { idx = (idx + d + figs.length) % figs.length; showLb(); }
+  function showLb() {
+    const fig = figs[idx];
+    document.getElementById('lb-img').src = fig.querySelector('img').src;
+    const cap = fig.querySelector('figcaption');
+    document.getElementById('lb-cap').innerHTML = cap ? cap.innerHTML : '';
+    document.getElementById('lb-counter').textContent = (idx+1) + ' / ' + figs.length;
+  }
+  document.getElementById('lb').addEventListener('click', e => { if (e.target.id==='lb') closeLb(); });
+  document.addEventListener('keydown', e => {
+    if (!document.getElementById('lb').classList.contains('on')) return;
+    if (e.key==='Escape') closeLb();
+    if (e.key==='ArrowRight') lbNav(1);
+    if (e.key==='ArrowLeft') lbNav(-1);
+  });
+</script>
+</body>
+</html>
